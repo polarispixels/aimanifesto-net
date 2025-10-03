@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Manifesto — Draft 0.1</title>
+  <meta name="description" content="The Artificial Intelligence Manifesto: values and principles for individuals, small businesses, enterprises, and society." />
+  <link rel="canonical" href="https://aimanifesto.net/" />
+  <style>
+    :root { --max: 860px; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:#111; background:#fff; }
+    header, main, footer { width:100%; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid #eee; background: #fafafa; }
+    h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 8px; }
+    h2 { font-size: clamp(20px, 3vw, 28px); margin-top:32px; }
+    ul { padding-left: 18px; }
+    .values li { margin: 6px 0; }
+    .pill { display:inline-block; padding:4px 10px; border:1px solid #ddd; border-radius:999px; font-size:14px; background:#f8f8f8; }
+    footer { border-top: 1px solid #eee; background:#fafafa; color:#555; }
+    a { color:#0b5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { margin-top: 8px; color:#666; font-size:14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Artificial Intelligence Manifesto</h1>
+      <div class="meta">Draft 0.1 • Last updated <span id="lu"></span> • <span class="pill">Public consultation</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h2>Core Values (We value… over …)</h2>
+      <ul class="values">
+        <li><strong>Human judgment</strong> over algorithmic automation</li>
+        <li><strong>Transparency</strong> over black-box efficiency</li>
+        <li><strong>Augmentation</strong> over replacement</li>
+        <li><strong>Ethical responsibility</strong> over unchecked innovation</li>
+        <li><strong>Long-term trust</strong> over short-term gain</li>
+      </ul>
+
+      <h2>Guiding Principles</h2>
+      <ol>
+        <li><strong>AI is a tool, not a master.</strong> It amplifies human creativity, decision-making, and productivity.</li>
+        <li><strong>Fairness & accountability are non-negotiable.</strong> Measure, mitigate, and disclose risks and bias.</li>
+        <li><strong>Opportunity for all scales.</strong> Individuals, SMBs, and enterprises should benefit without widening gaps.</li>
+        <li><strong>Human connection matters.</strong> Design to enhance empathy, dignity, and community.</li>
+        <li><strong>Iterate responsibly.</strong> Pair innovation with governance, safety, and continuous learning.</li>
+        <li><strong>Data stewardship is a duty.</strong> Privacy, consent, security, and minimal collection by default.</li>
+        <li><strong>Open collaboration.</strong> Policymakers, businesses, academia, and the public co-create the path.</li>
+        <li><strong>Adaptive systems.</strong> Evolve responsibly as contexts and capabilities change.</li>
+      </ol>
+
+      <h2>Scopes of Application</h2>
+      <ul>
+        <li><strong>Personal:</strong> Use AI to learn, create, and decide—own your inputs & outputs.</li>
+        <li><strong>Small Business:</strong> Focus on productivity, customer value, and clear ROI with lightweight governance.</li>
+        <li><strong>Enterprise:</strong> Formal risk management, model lifecycle oversight, and transparent vendor controls.</li>
+        <li><strong>Society:</strong> Safety, rights, and equitable access as first-order concerns.</li>
+      </ul>
+
+      <h2>Sign & Contribute</h2>
+      <p>Want to propose edits or sign the manifesto? Open an issue or pull request on GitHub (link coming soon), or email <a href="mailto:hello@aimanifesto.net">hello@aimanifesto.net</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="year"></span> AI Manifesto • <a href="/">aimanifesto.net</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const d = new Date();
+    document.getElementById('year').textContent = d.getFullYear();
+    document.getElementById('lu').textContent = d.toLocaleDateString(undefined, { year:'numeric', month:'long', day:'numeric' });
+  </script>
+</body>
+</html>
